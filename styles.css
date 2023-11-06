@@ -1,0 +1,234 @@
+/* || Universal styles */
+
+* {
+    box-sizing: border-box;
+}
+
+/* || Body styles */
+
+body {
+    background-color: rgb(251, 152, 201);
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* || Main Container styles */
+
+.main-container {
+    height: 430px;
+    width: 210px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* || Styles for elements inside .main-container except .food-tabs */
+
+.main-container *:not(.food-tabs) {
+    align-items: center;
+}
+
+/* || Status Bar styles */
+
+.status-bar {
+    margin-top: 5px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    /* height: 25px; */
+    width: 100%;
+}
+
+/* || Top Icon Bar styles */
+
+.top-icon-bar {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    /* height: 25px; */
+    width: 100%;
+}
+
+/* || Search Bar styles */
+
+.search-bar {
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: gray;
+    background-color: rgba(185, 185, 185, 0.465);
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+    /* padding: 2px 0; */
+    display: flex;
+    height: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    /* border: 0.5px solid gray; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.search-bar i {
+    font-size: 0.8rem;
+}
+
+/* || Food Tabs styles */
+
+.food-tabs {
+    font-size: 0.6rem;
+    color: rgba(128, 128, 128, 0.763);
+    font-weight: bold;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    padding: 0 10px;
+    height: 20px;
+}
+
+.food-tabs .selected {
+    color: black;
+}
+
+.food-tabs u {
+    text-decoration-color: rgb(217, 43, 226);
+    text-decoration-thickness: 3px;
+}
+
+/* || Food Card Container styles */
+
+.food-card-container {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    gap: 10px;
+    padding: 0 10px;
+    justify-content: center;
+}
+
+/* || Column 1 and Column 2 styles */
+
+.col-1, .col-2 {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* || Food Containers styles */
+
+.food-containers {
+    height: 190px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* || Offer Card styles */
+
+.offer-card {
+    height: 130px;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgb(255, 216, 254);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.offer-card .sm {
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+.offer-card .xs {
+    font-size: 0.4rem;
+    text-align: center;
+}
+
+.offer-card .lg {
+    font-size: 0.9rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* || Button styles */
+
+.button {
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: rgb(229, 0, 250);
+    background-color: white;
+    width: 83%;
+    padding: 0 5px;
+    border-radius: 2px;
+    border: 1px solid rgb(229, 0, 250);
+}
+
+/* || Food Container Image styles */
+
+.food-containers img {
+    margin-top: 10px;
+    width: 60px;
+}
+
+.food-containers .info-container {
+    padding-left: 5px;
+}
+
+.food-containers .title {
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+.food-containers .description {
+    font-size: 0.4rem;
+    margin-bottom: 8px;
+}
+
+.food-containers .price {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.food-containers.green {
+    background-color: rgb(180, 248, 209);
+}
+
+.food-containers.red {
+    background-color: rgb(255, 173, 173);
+}
+
+.food-containers.yellow {
+    background-color: rgb(255, 255, 168);
+}
+
+.food-containers.purple {
+    background-color: rgb(252, 187, 252);
+}
+
+.food-containers.light-green {
+    background-color: rgb(214, 251, 214);
+}
